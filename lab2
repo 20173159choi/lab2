@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "cal.h"
+
+int main() {
+	double a, b;
+	double r_a, r_s, r_m, r_d;
+
+	printf("input number 1: ");
+	scanf("%lf", &a);
+	printf("input number 2: ");
+	scanf("%lf", &b);
+
+	r_a = add(a, b);
+	r_s = subtract(a, b);
+	r_m = multiply(a, b);
+	r_d = divide(a, b);
+
+	printf("add: %lf, subtract: %lf, ", r_a, r_s);
+	printf("multiply; %lf, divide: %lf \n", r_m, r_d);
+
+	return 0;
+}
